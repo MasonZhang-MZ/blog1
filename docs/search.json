@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\nIntroduction Alix loves spending weekends exploring forests, filling her basket with mushrooms. But despite her passion for foraging, she often hesitates. What if she picks the wrong mushroom? The consequences can range from stomach aches to life-threatening poisonings.\nIdentifying mushrooms is hard—even for experts. So, how can technology help? That’s where artificial intelligence (AI) comes in. In this blog, we’ll explain how AI tools can help foragers like Alix safely identify mushrooms and reduce the risks associated with this rewarding hobby.\nThe Challenge: Why Mushroom Identification is Difficult Mushrooms are notoriously difficult to identify. Many poisonous varieties, like the infamous death cap, look remarkably similar to edible species. Even experienced foragers carry reference books and double-check with guides to avoid mistakes.\nFor beginners like Alix, the challenges are even greater:\nSimilar appearances: Subtle differences in shape or color can be misleading. Regional variations: Mushroom species vary by location, making general guides less reliable. Risk of human error: Misjudging a mushroom could lead to severe consequences. Traditional methods, like relying on field guides or online forums, are helpful but far from foolproof. This is where AI can make a difference.\nHow AI Can Help AI works by analyzing patterns in data, learning from past examples to make predictions about new inputs. For mushroom identification, here’s how it works:\nHow AI “Learns”\nA dataset of 60,000 mushrooms was used, with each mushroom labeled as edible or poisonous. Features like cap shape, stem color, and bruising were recorded. For example, some mushrooms have smooth caps, while others are convex or flat. Data was cleaned and converted into a format the AI could process. For instance, “red” became a numeric value like 1. The AI Models Used\nLogistic Regression: Think of this as a quick, educated guess based on patterns. While fast, it wasn’t as accurate as other models. K-Nearest Neighbors (KNN): This model compared each mushroom to similar ones it had seen before. It was more accurate but slower with large datasets. Support Vector Classifier (SVC): This advanced model identified the best boundary between edible and poisonous mushrooms. It was the most accurate but required more setup time. By analyzing these features, AI helps foragers like Alix make informed decisions about mushroom safety.\nResults: AI Performance in Action The SVC model performed the best, achieving 99.6% accuracy. Out of 12,181 test mushrooms:\n22 poisonous mushrooms were misclassified as edible (a critical error). 25 edible mushrooms were misclassified as poisonous (a safer error). While no model is perfect, the AI significantly reduces the likelihood of dangerous mistakes compared to human identification alone.\nReal-World Applications for People Like Alix For amateur foragers, AI tools offer a sense of security and confidence. Imagine Alix using an app powered by this mushroom classifier: she snaps a photo, and the AI predicts whether the mushroom is safe to eat.\nBeyond foraging, this technology has broader applications:\nRestaurants and food suppliers: Ensure mushrooms are safe before serving. Researchers: Study ecological patterns with accurate mushroom data. AI empowers users to make safer, more informed decisions in various fields.\nChallenges and Room for Improvement No tool is without its flaws. Some mushrooms were misclassified, which could have serious consequences. Additionally, the dataset might not include all regional species, limiting the model’s scope.\nTo improve, developers can:\nExpand datasets to include rare and regional mushrooms. Optimize models for faster, mobile-friendly use. With these updates, AI tools can become even more reliable and accessible.\nCall to Action Are you passionate about foraging like Alix? Explore AI-powered tools to enhance your safety and confidence while mushroom hunting. As technology evolves, tools like this make nature exploration safer and more rewarding.\nTake the first step today—your next outdoor adventure awaits!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 15, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  }
+]
