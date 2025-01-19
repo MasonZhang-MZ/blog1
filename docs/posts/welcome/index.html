@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2025-01-15">
+<meta name="author" content="Mingyang (Mason) Zhang">
+<meta name="dcterms.date" content="2025-01-18">
 
-<title>Welcome To My Blog – Blog</title>
+<title>How AI is Applied to Mushroom Identification – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -115,9 +115,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
+      <h1 class="title">How AI is Applied to Mushroom Identification</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">Explanation</div>
               </div>
                   </div>
   </div>
@@ -128,14 +128,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
+               <p>Mingyang (Mason) Zhang </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 15, 2025</p>
+        <p class="date">January 18, 2025</p>
       </div>
     </div>
     
@@ -154,30 +154,87 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
 <p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
-<p>Introduction Alix loves spending weekends exploring forests, filling her basket with mushrooms. But despite her passion for foraging, she often hesitates. What if she picks the wrong mushroom? The consequences can range from stomach aches to life-threatening poisonings.</p>
-<p>Identifying mushrooms is hard—even for experts. So, how can technology help? That’s where artificial intelligence (AI) comes in. In this blog, we’ll explain how AI tools can help foragers like Alix safely identify mushrooms and reduce the risks associated with this rewarding hobby.</p>
-<p>The Challenge: Why Mushroom Identification is Difficult Mushrooms are notoriously difficult to identify. Many poisonous varieties, like the infamous death cap, look remarkably similar to edible species. Even experienced foragers carry reference books and double-check with guides to avoid mistakes.</p>
-<p>For beginners like Alix, the challenges are even greater:</p>
-<p>Similar appearances: Subtle differences in shape or color can be misleading. Regional variations: Mushroom species vary by location, making general guides less reliable. Risk of human error: Misjudging a mushroom could lead to severe consequences. Traditional methods, like relying on field guides or online forums, are helpful but far from foolproof. This is where AI can make a difference.</p>
-<p>How AI Can Help AI works by analyzing patterns in data, learning from past examples to make predictions about new inputs. For mushroom identification, here’s how it works:</p>
-<p>How AI “Learns”</p>
-<p>A dataset of 60,000 mushrooms was used, with each mushroom labeled as edible or poisonous. Features like cap shape, stem color, and bruising were recorded. For example, some mushrooms have smooth caps, while others are convex or flat. Data was cleaned and converted into a format the AI could process. For instance, “red” became a numeric value like 1. The AI Models Used</p>
-<p>Logistic Regression: Think of this as a quick, educated guess based on patterns. While fast, it wasn’t as accurate as other models. K-Nearest Neighbors (KNN): This model compared each mushroom to similar ones it had seen before. It was more accurate but slower with large datasets. Support Vector Classifier (SVC): This advanced model identified the best boundary between edible and poisonous mushrooms. It was the most accurate but required more setup time. By analyzing these features, AI helps foragers like Alix make informed decisions about mushroom safety.</p>
-<p>Results: AI Performance in Action The SVC model performed the best, achieving 99.6% accuracy. Out of 12,181 test mushrooms:</p>
-<p>22 poisonous mushrooms were misclassified as edible (a critical error). 25 edible mushrooms were misclassified as poisonous (a safer error). While no model is perfect, the AI significantly reduces the likelihood of dangerous mistakes compared to human identification alone.</p>
-<p>Real-World Applications for People Like Alix For amateur foragers, AI tools offer a sense of security and confidence. Imagine Alix using an app powered by this mushroom classifier: she snaps a photo, and the AI predicts whether the mushroom is safe to eat.</p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>A lot of hikers love spending weekends exploring forests, filling their basket with mushrooms. But despite their passion for foraging, they often hesitates. What if they pick the wrong mushroom? The consequences can range from stomach aches to life-threatening poisonings, which are not worth the risk.</p>
+<p>Identifying mushrooms is hard—even for experts. So, how can technology help? That’s where artificial intelligence (AI) comes in. In this blog, we’ll explain how AI tools can help foragers like yourself to safely identify mushrooms and reduce the risks associated with this rewarding hobby.</p>
+</section>
+<section id="the-challenge-why-mushroom-identification-is-difficult" class="level1">
+<h1>The Challenge: Why Mushroom Identification is Difficult</h1>
+<p>Mushrooms are notoriously difficult to identify. Many poisonous varieties, like the infamous death cap, look remarkably similar to edible species. Even experienced foragers carry reference books and double-check with guides to avoid mistakes.</p>
+<p>For beginners like yourself, the challenges are even greater because of the following reasons:</p>
+<ul>
+<li>Similar appearances: Subtle differences in shape or color can be misleading, many edible and poisonous mushrooms share very similar appearances.</li>
+<li>Regional variations: Mushroom species vary by location, making general guides less reliable. The ones that are edible in one place can be poisonous in the other.</li>
+<li>Risk of human error: Misjudging a mushroom could lead to severe consequences.</li>
+</ul>
+<p>Traditional methods, like relying on field guides or online forums, are helpful but far from foolproof. This is where AI can make a difference.</p>
+</section>
+<section id="how-ai-can-help" class="level1">
+<h1>How AI Can Help</h1>
+<p>AI works by analyzing patterns in data, learning from past examples to make predictions about new inputs, which means the AI tools we are using is able to cross reference the mushroom in front of you with the ones it had seen before, to determine if it’s poisonous or not. For mushroom identification, here’s how it works:</p>
+<section id="how-ai-learns" class="level2">
+<h2 class="anchored" data-anchor-id="how-ai-learns">How AI “Learns”</h2>
+<ul>
+<li>A dataset of 60,000 mushrooms was used, with each mushroom labeled as edible or poisonous.</li>
+<li>Features like cap shape, stem color, and bruising were recorded. For example, some mushrooms have smooth caps, while others are convex or flat.</li>
+<li>Data was cleaned and converted into a format the AI could process. For instance, “red” became a numeric value like 1.</li>
+</ul>
+<p><img src="images/target_variable_distribution.png" class="img-fluid" alt="Target Variable Distribution"> <img src="images/cap-diameter_histogram.png" class="img-fluid" alt="Cap Diameter Histogram"> <img src="images/stem-height_histogram.png" class="img-fluid" alt="Stem Height Histogram"> <img src="images/stem-width_histogram.png" class="img-fluid" alt="Stem Width Histogram"></p>
+</section>
+<section id="the-ai-models-used" class="level2">
+<h2 class="anchored" data-anchor-id="the-ai-models-used">The AI Models Used</h2>
+<ul>
+<li>Logistic Regression: Think of this as a quick, educated guess based on patterns. While fast, it wasn’t as accurate as other models.</li>
+<li>K-Nearest Neighbors (KNN): This model compared each mushroom to similar ones it had seen before. It was more accurate but slower with large datasets.</li>
+<li>Support Vector Classifier (SVC): This advanced model identified the best boundary between edible and poisonous mushrooms. It was the most accurate but required more setup time.</li>
+</ul>
+<p>By analyzing these features, AI helps foragers like yourself make informed decisions about mushroom safety.</p>
+</section>
+</section>
+<section id="results-ai-performance-in-action" class="level1">
+<h1>Results: AI Performance in Action</h1>
+<p>The SVC model performed the best, achieving 99.6% accuracy. Out of 12,181 test mushrooms:</p>
+<ul>
+<li>22 poisonous mushrooms were misclassified as edible (a critical error).</li>
+<li>25 edible mushrooms were misclassified as poisonous (a safer error).</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/train_confusion_matrix.png" class="img-fluid figure-img"></p>
+<figcaption>Confusion Matrix</figcaption>
+</figure>
+</div>
+<p>While no model is perfect, the AI significantly reduces the likelihood of dangerous mistakes compared to human identification alone.</p>
+</section>
+<section id="real-world-applications-for-people-like-yourself" class="level1">
+<h1>Real-World Applications for People Like Yourself</h1>
+<p>For amateur foragers, AI tools offer a sense of security and confidence. Imagine yourself using an app powered by this mushroom classifier: you snaps a photo, and the AI predicts whether the mushroom is safe to eat.</p>
 <p>Beyond foraging, this technology has broader applications:</p>
-<p>Restaurants and food suppliers: Ensure mushrooms are safe before serving. Researchers: Study ecological patterns with accurate mushroom data. AI empowers users to make safer, more informed decisions in various fields.</p>
-<p>Challenges and Room for Improvement No tool is without its flaws. Some mushrooms were misclassified, which could have serious consequences. Additionally, the dataset might not include all regional species, limiting the model’s scope.</p>
-<p>To improve, developers can:</p>
-<p>Expand datasets to include rare and regional mushrooms. Optimize models for faster, mobile-friendly use. With these updates, AI tools can become even more reliable and accessible.</p>
-<p>Call to Action Are you passionate about foraging like Alix? Explore AI-powered tools to enhance your safety and confidence while mushroom hunting. As technology evolves, tools like this make nature exploration safer and more rewarding.</p>
+<ul>
+<li>Restaurants and food suppliers: Ensure mushrooms are safe before serving.</li>
+<li>Researchers: Study ecological patterns with accurate mushroom data.</li>
+</ul>
+<p>AI empowers users to make safer, more informed decisions in various fields.</p>
+</section>
+<section id="challenges-and-room-for-improvement" class="level1">
+<h1>Challenges and Room for Improvement</h1>
+<p>No tool is without its flaws. Some mushrooms were misclassified, which could have serious consequences. Additionally, the dataset might not include all regional species, limiting the model’s scope.</p>
+<p>To improve, further development can:</p>
+<ul>
+<li>Expand datasets to include rare and regional mushrooms.</li>
+<li>Optimize models for faster, mobile-friendly use.</li>
+</ul>
+<p>With these updates, AI tools can become even more reliable and accessible.</p>
+</section>
+<section id="the-wild-is-calling" class="level1">
+<h1>The Wild is Calling</h1>
+<p>Are you passionate about foraging? Explore AI-powered tools to enhance your safety and confidence while mushroom hunting. As technology evolves, tools like this make nature exploration safer and more rewarding.</p>
 <p>Take the first step today—your next outdoor adventure awaits!</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
